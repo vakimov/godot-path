@@ -1,8 +1,0 @@
-::res://::1413710724
-icon.png::ImageTexture::1413709891::
-obstacle.png::ImageTexture::1411407815::
-player.gd::GDScript::1413710724::
-player.png::ImageTexture::1411407815::
-player.scn.xml::PackedScene::1413710226::
-world.scn.xml::PackedScene::1413710680::
-world_tileset.res.xml::TileSet::1413710675::
