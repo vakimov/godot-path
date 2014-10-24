@@ -18,6 +18,12 @@ func _fixed_process(delta):
 	
 	motion = motion.normalized() * MOTION_SPEED * delta
 	move(motion)
+	
+	# sliding
+	if is_colliding():
+		var n = get_collision_normal()
+		motion = n.slide(motion)
+		move(motion)
 
 
 func _ready():
