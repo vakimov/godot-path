@@ -9,11 +9,12 @@ var next_steps_in_run = steps_in_run
 var _direction_takes = null
 var _run_gone = 0
 
+var label = null
+
 # To detect when it should stops trying to move forward
 var _motionless_count = 0
 const MAX_MOTIONLESS_COUNT = 5
 
-#var _prev_delta = 0
 var _prev_pos = Vector2()
 var _passed_segment = Vector2()
 var velocity = Vector2()
@@ -66,12 +67,20 @@ func _move_to_perfect(pos):
 	move_to(pos)
 
 
+func _update_number():
+	label.set_text(str(steps_in_run))
+
+
 func _end_motion():
 	_run_gone = 0
 	_motionless_count = 0
 	_direction_takes = null
 	steps_in_run = next_steps_in_run
+	_update_number()
 
 
 func _ready():
+	_prev_pos = get_pos()
+	label = get_node("label")
+	_update_number()
 	set_fixed_process(true)
