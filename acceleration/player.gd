@@ -1,17 +1,18 @@
 
 extends KinematicBody2D
 
+const MOTION_SPEED = 200 # pixels/second
 const ACCELERATION = 2000
 const STEP_SIZE = 16  # pixels
 
 var steps_in_run = 1
-var next_steps_in_run = steps_in_run
+var next_steps_in_run = steps_in_run  # to switch run size
 var _direction_takes = null
 var _run_gone = 0
 
 var label = null
 
-# To detect when it should stops trying to move forward
+# To detect when it should stops trying to move forwart
 var _motionless_count = 0
 const MAX_MOTIONLESS_COUNT = 5
 
@@ -20,12 +21,35 @@ var _prev_pos = Vector2()
 var _passed_segment = Vector2()
 var velocity = Vector2()
 
+var _base_modulate = Color()
+
+const WARMING_SPEED = 200
+var _warming = 0
+
 
 func _fixed_process(delta):
+	
 	_passed_segment = get_pos() - _prev_pos
 	velocity = _passed_segment / delta
 	_prev_pos = get_pos()
 	_prev_delta = delta
+	
+	if velocity.length() > 190:
+		#label.add_color_override("Font Color", Color(255, 0, 0))
+		#_warming += WARMING_SPEED * delta
+		#_warming = min(_warming, 255)
+		#get_node("Sprite").set_modulate(Color(255, 50-_warming, 50-_warming))
+		#var c = Color(255, 200, 200)
+		get_node("Sprite").set_modulate(Color(1, 0, 0))
+	else:
+		#var c = label.get_color("Font Color")
+		#label.add_color_override("Font Color", _base_font_color)
+		get_node("Sprite").set_modulate(_base_modulate)
+		#_warming -= WARMING_SPEED * delta
+		#_warming = max(_warming, 0)
+		#get_node("Sprite").set_modulate(Color(255, 255-_warming, 255-_warming))
+	#label.add_color_override("Font Color", Color(255, 0, 0))
+	#var c = label.get_color("Font Color")
 	
 	if _direction_takes == null:
 		if (Input.is_action_pressed("move_up")):
@@ -88,6 +112,8 @@ func _end_motion():
 
 func _ready():
 	_prev_pos = get_pos()
+	set_meta("who", "player")
 	label = get_node("label")
+	_base_modulate = get_node("Sprite").get_modulate()
 	_update_number()
 	set_fixed_process(true)
