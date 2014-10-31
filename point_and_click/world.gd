@@ -1,5 +1,5 @@
 
-extends Node2D
+extends Node
 
 var tile_map = null
 var obstacle_tile_id = null

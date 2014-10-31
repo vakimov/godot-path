@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="16" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://obstacle.png" type="Texture"></ext_resource>
 	<ext_resource path="res://finish.png" type="Texture"></ext_resource>
 	<ext_resource path="res://arrow.png" type="Texture"></ext_resource>
+	<ext_resource path="res://obstacle.png" type="Texture"></ext_resource>
+	<ext_resource path="res://discrete_changer_5.gd" type="Script"></ext_resource>
+	<ext_resource path="res://discrete_changer_3.gd" type="Script"></ext_resource>
 	<ext_resource path="res://discrete_changer_2.gd" type="Script"></ext_resource>
 	<ext_resource path="res://pointer.gd" type="Script"></ext_resource>
 	<ext_resource path="res://world.gd" type="Script"></ext_resource>
-	<ext_resource path="res://discrete_changer_5.gd" type="Script"></ext_resource>
-	<ext_resource path="res://discrete_changer_3.gd" type="Script"></ext_resource>
+	<ext_resource path="res://discrete_changer.scn.xml" type="PackedScene"></ext_resource>
 	<ext_resource path="res://player.scn.xml" type="PackedScene"></ext_resource>
 	<ext_resource path="res://world_tileset.res.xml" type="TileSet"></ext_resource>
-	<ext_resource path="res://discrete_changer.scn.xml" type="PackedScene"></ext_resource>
 	<resource type="RectangleShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2 name="extents"> 7.8, 7.8 </vector2>
@@ -559,7 +559,7 @@
 				<real> 41 </real>
 				<real> 371 </real>
 				<real> 54 </real>
-				<string> "point here to add obstacle" </string>
+				<string> "point and click here to add an obstacle" </string>
 				<vector2> 49.5158, 16.8102 </vector2>
 				<resource  resource_type="Texture" path="res://arrow.png">  </resource>
 				<resource  resource_type="Curve2D" path="local://4">  </resource>
