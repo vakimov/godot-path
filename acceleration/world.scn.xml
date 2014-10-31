@@ -3,12 +3,12 @@
 	<ext_resource path="res://sounds.res" type="SampleLibrary"></ext_resource>
 	<ext_resource path="res://world.gd" type="Script"></ext_resource>
 	<ext_resource path="res://discrete_changer_4.gd" type="Script"></ext_resource>
-	<ext_resource path="res://discrete_changer_5.gd" type="Script"></ext_resource>
 	<ext_resource path="res://tile_set.res.xml" type="TileSet"></ext_resource>
+	<ext_resource path="res://discrete_changer_5.gd" type="Script"></ext_resource>
 	<ext_resource path="res://discrete_changer_3.gd" type="Script"></ext_resource>
 	<ext_resource path="res://finish.png" type="Texture"></ext_resource>
-	<ext_resource path="res://player.scn.xml" type="PackedScene"></ext_resource>
 	<ext_resource path="res://glass.scn.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://player.scn.xml" type="PackedScene"></ext_resource>
 	<ext_resource path="res://discrete_changer.scn.xml" type="PackedScene"></ext_resource>
 	<resource type="RectangleShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
@@ -337,10 +337,10 @@
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
-							<string> "fov" </string>
-							<real> 45 </real>
 							<string> "zfar" </string>
 							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
 							<string> "viewports" </string>
 							<array  len="4" shared="false">
 								<dictionary  shared="false">
@@ -406,10 +406,10 @@
 							<bool> True </bool>
 							<string> "show_grid" </string>
 							<bool> True </bool>
-							<string> "znear" </string>
-							<real> 0.1 </real>
 							<string> "show_origin" </string>
 							<bool> True </bool>
+							<string> "znear" </string>
+							<real> 0.1 </real>
 						</dictionary>
 					</dictionary>
 					<string> "__editor_run_settings__" </string>
@@ -454,10 +454,10 @@
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
-							<string> "fov" </string>
-							<real> 45 </real>
 							<string> "zfar" </string>
 							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
 							<string> "viewports" </string>
 							<array  len="4" shared="false">
 								<dictionary  shared="false">
@@ -523,10 +523,10 @@
 							<bool> True </bool>
 							<string> "show_grid" </string>
 							<bool> True </bool>
-							<string> "znear" </string>
-							<real> 0.1 </real>
 							<string> "show_origin" </string>
 							<bool> True </bool>
+							<string> "znear" </string>
+							<real> 0.1 </real>
 						</dictionary>
 					</dictionary>
 					<string> "__editor_run_settings__" </string>
@@ -580,10 +580,10 @@
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
-							<string> "fov" </string>
-							<real> 45 </real>
 							<string> "zfar" </string>
 							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
 							<string> "viewports" </string>
 							<array  len="4" shared="false">
 								<dictionary  shared="false">
@@ -649,10 +649,10 @@
 							<bool> True </bool>
 							<string> "show_grid" </string>
 							<bool> True </bool>
-							<string> "znear" </string>
-							<real> 0.1 </real>
 							<string> "show_origin" </string>
 							<bool> True </bool>
+							<string> "znear" </string>
+							<real> 0.1 </real>
 						</dictionary>
 					</dictionary>
 					<string> "__editor_run_settings__" </string>

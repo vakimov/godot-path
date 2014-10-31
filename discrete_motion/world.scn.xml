@@ -6,8 +6,8 @@
 	<ext_resource path="res://discrete_changer_5.gd" type="Script"></ext_resource>
 	<ext_resource path="res://discrete_changer_2.gd" type="Script"></ext_resource>
 	<ext_resource path="res://finish.png" type="Texture"></ext_resource>
-	<ext_resource path="res://player.scn.xml" type="PackedScene"></ext_resource>
 	<ext_resource path="res://discrete_changer.scn.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://player.scn.xml" type="PackedScene"></ext_resource>
 	<resource type="RectangleShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2 name="extents"> 8, 8 </vector2>
