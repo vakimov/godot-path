@@ -1,0 +1,21 @@
+id,en,ru
+CONTEXT_1_STATEMENT_1,Jane go out with Bob,Джейн встречается с Бобом
+CONTEXT_1_STATEMENT_2,Boob still loves his ex-girlfriend Susan,"Боб все еще любил свою бывшую, Сьюзан"
+CONTEXT_1_STATEMENT_3,Susan treat Bob as a friend,"Сьюзан ведет себя с Бобом, как друг"
+CONTEXT_1_STATEMENT_4,Jane jealous of Bob to Susan,Джейн ревнует Боба к Сьюзан
+CONTEXT_1_QUESTION_1,Does Jane have a formal reason to be jealous of Bob?,Есть ли у Джейн повод ревновать Боба?
+CONTEXT_1_QUESTION_1_ANSWER,It's not clear,Не ясно
+CONTEXT_1_QUESTION_1_ANSWER_OPTION_1,Yes,Да
+CONTEXT_1_QUESTION_1_ANSWER_OPTION_2,No,Нет
+CONTEXT_1_QUESTION_1_ANSWER_OPTION_3,What are you talking about?!,Вы вообще о чем?!
+CONTEXT_1_QUESTION_1_ANSWER_EXPLANATION,"Whle Susan gave Jane no reason to be jealous of Bob, treating him like a friend, we don't know the same about a Bob","Хотя Сюзан не дает Джейн повода ревновать Боба, мы не знаем, дает ли поводы Боб"
+CONTEXT_2_STATEMENT_1,Scavenger Ace is a witness to a murder,Мусорщик Эйс — свидетель убийства
+CONTEXT_2_STATEMENT_2,The police have to organise a witness protection till a trial,Полиция обязана обеспечить защиту свидетеля вплоть до слушания
+CONTEXT_2_STATEMENT_3,The murder trial will start in a week,Слушание по убийству начнется в течении недели
+CONTEXT_2_STATEMENT_4,At the begining Ace also was suspect of this murder,Эйс тоже был подозреваемый по этому убийству
+CONTEXT_2_QUESTION_1,How long Ace will be guarded,Как долго Эйс будет находиться под охраной
+CONTEXT_2_QUESTION_1_ANSWER,For about a 7 days,В течении где-то семи дней
+CONTEXT_2_QUESTION_1_ANSWER_OPTION_1,Till the release from the sentence,Вполоть до особождения от наказания
+CONTEXT_2_QUESTION_1_ANSWER_OPTION_2,He wouldn't,Ни сколько не будет
+CONTEXT_2_QUESTION_1_ANSWER_OPTION_3,We don't have a clue,"У нас нет зацепок, чтобы предположить"
+CONTEXT_2_QUESTION_1_ANSWER_EXPLANATION,"Ace will be guarded as a witness for about a week till the trial starts","Эйс будет находиться под защитой как свидетель в течении где-то недели, пока не начнется процесс"
